@@ -1,0 +1,646 @@
+@import "normalizez.scss"
+@import "resets.scss"
+
+*
+    box-sizing: border-box
+
+$color-yellow: #F8F200
+$color-turquoise: #52BEDC
+$color-gray: #777777
+
+
+@font-face 
+    font-family: "Archangelsk" 
+    src: url('../fonts/Archangelsk.ttf')
+    font-weight: regular
+    font-style: normal
+    font-display: swap
+
+@font-face 
+    font-family: "Roboto" 
+    src: url('../fonts/Roboto-Bold.ttf')
+    font-weight: 700
+    font-style: normal
+    font-display: swap
+
+@font-face 
+    font-family: "Roboto" 
+    src: url('../fonts/Roboto-Regular.ttf')
+    font-weight: 400
+    font-style: normal
+    font-display: swap
+
+@font-face 
+    font-family: "Roboto" 
+    src: url('../fonts/Roboto-Light.ttf')
+    font-weight: 300
+    font-style: normal
+    font-display: swap
+
+.carousel-inner
+    position: absolute
+    z-index: -2
+
+.carousel-item
+    img
+        height: 1000px
+        object-fit: cover
+
+.first-section
+    position: relative
+    display: flex
+    justify-content: center
+
+.first-section__content
+    position: relative
+    height: 1000px
+    padding-top: 20px
+
+
+.nav-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.container
+    width: 624px
+    height: 369px
+    position: absolute
+    bottom: 0px
+    right: 0px
+    padding: 70px 70px 173px 70px
+    img
+        z-index: -1
+        position: absolute
+        bottom: 0px
+        right: 0px
+    &__title
+        margin-bottom: 25px
+    button
+        background: black
+        border: none
+        font-size: 24px
+        width: 272px
+        height: 78px
+        color: $color-yellow
+    &-mobile-version
+        display: none
+
+button
+    border: none
+    font-family: "Roboto"
+    font-weight: 700
+
+
+.nav-menu
+    display: inline-flex
+    li
+        margin-right: 40px
+        &:last-child
+            margin-right: 0
+        &:nth-child(5)
+            margin-right: 40.64px
+
+
+.content
+    position: relative
+    width: 1280px
+    margin: 0 auto
+
+.title
+    font-size: 62px
+    font-family: 'Archangelsk'
+    color: #000
+
+.text
+    font-family: "Roboto"
+    font-size: 18px
+
+
+.second-section
+    position: relative
+    min-height: 847px
+    padding-top: 70px
+    &__text
+        width: 952px
+        color: #777
+        line-height: 34px
+        margin-bottom: 70px
+        span
+            color: $color-turquoise
+            font-weight: 700
+    &__title
+        margin-bottom: 25px
+    &__image-container
+        display: flex
+        flex-direction: row
+        &-mobile-version
+            display: none
+        img
+            &:nth-child(1)
+                margin-bottom: 32px
+    &__img-tablet-version
+        display: none
+
+.third-section
+    background: #000000
+    height: 884px
+    &__transition
+        height: 70px
+        background: url(../img/221.jpg)
+    &__icon
+        position: absolute
+        top: 15px
+    &__title
+        color: #FFFFFF
+        position: absolute
+        top: 70px
+        left: 164px
+    &__text
+        position: absolute
+        width: 952px
+        color: #FFF
+        top: 172px
+        line-height: 34px
+        br
+            display: none
+        span
+            color: $color-turquoise
+            font-weight: 700
+    &__form
+        width: 460px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__photos-of-consoles
+        position: absolute
+        top: 288px
+        left: 492px
+
+
+.form
+    position: absolute
+    top: 361px
+    &__input 
+        display: block
+        width: 100%
+        border: none
+        background-color: transparent
+        font-weight: 300
+        line-height: 21px
+        padding-bottom: 13px
+        padding-left: 0
+        color: #FFFFFF
+        border-bottom: 1px solid $color-gray
+        margin-bottom: 35px
+    button
+        background-color: $color-yellow
+        border: none
+        font-size: 18px
+        width: 192px
+        height: 59px
+        color: black
+        margin-bottom: 15px
+        
+
+.form-label 
+    width: 100%
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: var(--light-color)
+    border: 1px dashed $color-gray
+    padding: 39px
+    margin-bottom: 32px
+    &__file 
+        position: absolute
+        opacity: 0
+    &__text 
+        display: inline-block
+        margin-bottom: 7px
+        font-weight: 300
+        color: #FFFFFF
+        text-decoration-line: underline
+    &__images 
+        font-weight: 300
+        font-size: 12px
+        font-family: "Roboto"
+        color: #FFF
+
+
+.checkbox
+    &__input
+        position: absolute
+        opacity: 0
+    &__text 
+        display: flex
+        align-items: center
+        font-weight: 300
+        font-size: 12px
+        line-height: 14px
+        color: white
+
+.checkbox__text::before 
+    content: ""
+    margin-right: 10px
+    width: 14px
+    height: 14px
+    box-sizing: border-box
+    border: 1px solid #777777
+    background-position: center
+    background-repeat: no-repeat
+
+
+.fourth-section
+    background: $color-yellow
+    min-height: 746px
+    p
+        color: #000
+    &__transition
+        height: 70px
+        background: url(../img/222.jpg)
+        margin-bottom: 70px
+    &__content
+        display: flex
+        justify-content: space-between
+    button
+        width: 194px
+        height: 59px
+        background: #000000
+        font-size: 18px
+        color: $color-yellow
+    h4
+        margin-bottom: 25px
+    &__text
+        line-height: 34px
+        width: 624px
+        margin-bottom: 25px
+        br
+            display: none
+    &__list
+        margin-bottom: 40px
+    &__logos
+        display: flex
+        justify-content: center
+        img
+            margin-right: 25px
+            &:last-child
+                margin-right: 0
+    &__photo-of-the-monitor
+        margin-bottom: 26px
+    
+    
+.icons-and-text
+    display: flex
+    flex-direction: column
+    li
+        display: inline-flex
+        align-items: center
+        margin-bottom: 15px
+        &:last-child
+            margin-bottom: 0
+        img
+            margin-right: 10px
+
+.fifth-section
+    background: #000000
+    display: flex
+    &__right-wrapper
+        padding-top: 70px
+        h5
+            color: #FFF
+            margin-bottom: 25px
+    &__text
+        color: $color-turquoise
+        font-size: 24px
+        font-weight: 700
+        margin-bottom: 15px
+
+    &__list
+        margin-bottom: 70px
+        p
+            color: #FFFFFF
+    &__logos
+        width: 319px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        img
+            &:nth-child(1)
+                margin-right: 79px
+                margin-bottom: 47.81px
+            &:nth-child(2)
+                margin-bottom: 47.81px
+    &__second-text
+        color: $color-turquoise
+        font-size: 24px
+        font-weight: 700
+        margin-bottom: 24.85px
+    &__img
+        margin-right: 32px
+
+.footer
+    min-height: 140px
+    padding-top: 13px
+    &__cyberpunk-logo
+        margin-right: 32px
+    &__texts
+        color: #000000
+        display: inline-flex
+        p
+            &:nth-child(1)
+                margin-right: 32px
+        &-mobile-version
+            display: none
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 13px
+    &__element-2
+        background: #000000
+        height: 40px
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+    &__text
+        color: #FFFFFF
+        font-size: 12px
+        
+@media (max-width: 1300px)
+    .content
+        width: 952px
+        br
+            display: inline
+    .carousel-item
+        height: 1000px
+    .image-1
+        img
+            content: url(../img/11_1.png)
+    .image-2
+        img
+            content: url(../img/2.png)
+    .image-3
+        img
+            content: url(../img/3.png)
+    .second-section
+        &__title
+            width: 620px
+        &__text
+            width: 788px
+        &__image-container
+            display: block
+            margin-bottom: 70px
+            div
+                display: flex
+                justify-content: space-between
+                margin-bottom: 32px
+            img
+                &:nth-child(1)
+                    margin-bottom: 0
+        &__img
+            content: url(../img/Rectangle61.jpg)
+    .third-section
+        height: 1093px
+        &__title
+            left: 0
+            top: 162px
+            width: 460px
+        &__text
+            top: 313px
+            width: 460px
+        &__form
+            top: 570px
+        &__photos-of-consoles
+            content: url(../img/Group244.png)
+            top: 95px
+    .fourth-section
+        min-height: 866px
+        &__photo-of-the-monitor
+            content: url(../img/c0661174312.png)
+            margin-bottom: 25px
+        &__logos
+            display: block
+            img
+                display: block
+                &:nth-child(1)
+                    margin-left: 187px
+                    margin-bottom: 25px
+                &:nth-child(2)
+                    margin-left: 175px
+                    margin-bottom: 25px
+                &:nth-child(3)
+                    margin-left: 70px
+        h4
+            width: 460px
+        &__text
+            width: 460px
+    .fifth-section
+        &__img
+            content: url(../img/Untitled-111.jpg)
+
+
+@media (max-width: 952px)
+    .content 
+        width: 296px
+    .first-section
+        height: 763px
+    .first-section__content
+        height: 763px
+    .carousel-item
+        height: 713px
+    .image-1
+        img
+            content: url(../img/111.png)
+    .image-2
+        img
+            content: url(../img/22.png)
+    .image-3
+        img
+            content: url(../img/33.png)
+    .nav-container
+        flex-direction: column
+        nav
+            img
+                height: 25px
+        img
+            height: 50px
+            margin-bottom: 10px
+    .nav-menu
+        li
+            margin-right: 30px
+            &:last-child
+                margin-right: 0
+            &:nth-child(1)
+                margin-right: 28px
+            &:nth-child(5)
+                margin-right: 30px
+    .title
+        font-size: 30px
+        color: #000
+    .text
+        font-size: 16px
+    .container
+        display: none
+    .container-mobile-version
+        display: block
+        margin: 0 auto
+        width: 320px
+        height: 207px
+        position: absolute
+        bottom: 0
+        &__title
+            text-align: center
+            margin: 30px 12px 25px 13px
+        button
+            background: black
+            border: none
+            margin: 0 38px
+            font-size: 20px
+            width: 244px
+            height: 60px
+            color: $color-yellow
+        img
+            z-index: -1
+            position: absolute
+            bottom: 0
+            right: 0
+    .second-section
+        &__title
+            width: 296px
+        &__text
+            line-height: 32px
+            width: 296px
+        &__image-container
+            display: none
+            &-mobile-version
+                display: block
+                width: 320px
+                margin: 0 auto
+                margin-bottom: 70px
+                img
+                    margin-bottom: 32px
+                    &:last-child
+                        margin-bottom: 0
+    .third-section
+        min-height: 1071px
+        &__icon
+            height: 62px
+            top: 6px
+        &__title
+            color: #FFFFFF
+            top: 211px
+        &__text
+            line-height: 32px
+            width: 100%
+            top: 267px
+        &__photos-of-consoles
+            content: url(../img/Group245.png)
+            left: 0
+            top: 55px
+        &__form
+            width: 100%
+    .form
+        button
+            font-size: 16px
+            width: 182px
+            height: 60px
+            margin-bottom: 14px
+    .form-label__images
+        display: none
+    .checkbox__text
+        font-size: 12px
+    .fourth-section
+        &__photo-of-the-monitor
+            content: url(../img/c0661174313.png)
+        &__logos
+            display: flex
+            margin-bottom: 40px
+            img
+                margin-right: 13.7px
+                &:nth-child(1)
+                    width: 43.852px
+                    height: 44px
+                    margin-left: 0
+                    margin-bottom: 0
+                &:nth-child(2)
+                    content: url(../icons/Group2356.svg)
+                    margin-left: 0
+                    margin-bottom: 0
+                &:last-child
+                    content: url(../icons/Cyberpunk_2077_logo3.svg)
+                    margin-left: 0
+                    margin-bottom: 0
+                    margin-right: 0
+        &__text
+            width: 296px
+            line-height: 32px
+            br
+                display: none
+        &__content
+            display: block
+        button
+            width: 184px
+            height: 60px
+            font-size: 16px
+            margin-bottom: 70px
+    .icons-and-text
+        li
+            img
+                width: 24px
+                margin-right: 18px
+    .fifth-section
+        display: block
+        min-height: 785px
+        &__img
+            content: url(../img/Untitled-122.jpg)
+            width: 100%
+            display: block
+            margin: 0 auto
+            margin-bottom: 40px
+        &__right-wrapper
+            margin: 0 auto
+            padding: 0
+            width: 296px
+        &__list
+            margin-bottom: 40px
+        &__second-text
+            margin-bottom: 25.85px
+        &__logos
+            width: 100%
+            img
+                &:nth-child(1)
+                    margin-right: 56px
+    .footer
+        min-height: 140px
+        padding-top: 40px
+        &__cyberpunk-logo
+            height: 50px
+            margin-bottom: 25px
+            margin-right: 0
+        &__cd-projekt-logo
+            height: 50px
+        &__content
+            display: block
+        &__text
+            color: #FFFFFF
+            font-size: 12px
+        &__logos
+            display: flex
+            flex-direction: column
+            margin-bottom: 25px
+        &__texts
+            display: none
+            &-mobile-version
+                padding-top: 25px
+                display: flex
+                text-align: center
+                flex-direction: column
+                background: #E6E6E6
+                height: 103px
+                p
+                    margin-bottom: 15px
+                    &:last-child
+                        margin-bottom: 0
